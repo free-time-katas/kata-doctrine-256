@@ -1,0 +1,17 @@
+{
+  "name": "daviddiaz/kata-doctrine-256",
+  "description": "Kata de doctrine version 2.5.6",
+  "type": "project",
+  "require": {
+    "doctrine/orm": "^2.5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.1"
+  },
+  "authors": [
+    {
+      "name": "David Díaz",
+      "email": "diazdavid.info@gmail.com"
+    }
+  ]
+}
