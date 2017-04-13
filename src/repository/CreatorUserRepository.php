@@ -10,6 +10,7 @@ interface CreatorUserRepository
 {
     /**
      * @param CreatorUserRepositoryDTO $dto
+     * @throws DataNotStorageException
      */
     public function save(CreatorUserRepositoryDTO $dto);
 }
