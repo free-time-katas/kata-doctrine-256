@@ -1,9 +1,9 @@
 <?php
 
-namespace diaz\david\tests\repository;
+namespace diaz\david\tests\repository\creator;
 
+use diaz\david\repository\creator\DoctrineCreatorUserRepository;
 use diaz\david\repository\DataNotStorageException;
-use diaz\david\repository\DoctrineCreatorUserRepository;
 use diaz\david\repository\UserEntity;
 use diaz\david\repository\UserRepositoryDTO;
 use diaz\david\tests\fake\FakeEntityManager;
@@ -18,7 +18,7 @@ use PHPUnit\Framework\TestCase;
 
 /**
  * Class DoctrineCreatorUserRepositoryTest
- * @package diaz\david\tests\repository
+ * @package diaz\david\tests\repository\creator
  */
 class DoctrineCreatorUserRepositoryTest extends TestCase
 {

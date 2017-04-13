@@ -1,6 +1,6 @@
 <?php
 
-namespace diaz\david\tests\repository;
+namespace diaz\david\tests\repository\updater;
 
 use diaz\david\repository\DataNotStorageException;
 use diaz\david\repository\updater\DoctrineUpdaterUserRepository;
@@ -19,7 +19,7 @@ use PHPUnit\Framework\TestCase;
 
 /**
  * Class DoctrineUpdaterUserRepositoryTest
- * @package diaz\david\tests\repository
+ * @package diaz\david\tests\repository\updater
  */
 class DoctrineUpdaterUserRepositoryTest extends TestCase
 {

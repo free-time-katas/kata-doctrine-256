@@ -1,13 +1,16 @@
 <?php
 
-namespace diaz\david\repository;
+namespace diaz\david\repository\creator;
 
+use diaz\david\repository\DataNotStorageException;
+use diaz\david\repository\UserEntity;
+use diaz\david\repository\UserRepositoryDTO;
 use Doctrine\ORM\EntityManager;
 use Exception;
 
 /**
  * Class DoctrineCreatorUserRepository
- * @package diaz\david\repository
+ * @package diaz\david\repository\creator
  */
 class DoctrineCreatorUserRepository implements CreatorUserRepository
 {
