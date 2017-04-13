@@ -3,20 +3,38 @@
 namespace diaz\david\repository;
 
 /**
- * Class CreatorUserRepositoryDTO
+ * Class UserRepositoryDTO
  * @package diaz\david\repository
  */
-class CreatorUserRepositoryDTO
+class UserRepositoryDTO
 {
+    /** @var int */
+    private $_id;
     /** @var string */
     private $_name;
     /** @var string */
     private $_surname;
 
     /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->_id;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId(int $id)
+    {
+        $this->_id = $id;
+    }
+
+    /**
      * @return string
      */
-    public function getName(): string
+    public function getName()
     {
         return $this->_name;
     }
@@ -32,7 +50,7 @@ class CreatorUserRepositoryDTO
     /**
      * @return string
      */
-    public function getSurname(): string
+    public function getSurname()
     {
         return $this->_surname;
     }
