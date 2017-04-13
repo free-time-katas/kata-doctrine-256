@@ -24,10 +24,10 @@ class DoctrineCreatorUserRepository implements CreatorUserRepository
     }
 
     /**
-     * @param CreatorUserRepositoryDTO $dto
+     * @param UserRepositoryDTO $dto
      * @throws DataNotStorageException
      */
-    public function save(CreatorUserRepositoryDTO $dto)
+    public function save(UserRepositoryDTO $dto)
     {
         try {
             $userEntity = $this->_createUserEntity($dto);
@@ -38,10 +38,10 @@ class DoctrineCreatorUserRepository implements CreatorUserRepository
     }
 
     /**
-     * @param CreatorUserRepositoryDTO $dto
+     * @param UserRepositoryDTO $dto
      * @return UserEntity
      */
-    private function _createUserEntity(CreatorUserRepositoryDTO $dto): UserEntity
+    private function _createUserEntity(UserRepositoryDTO $dto): UserEntity
     {
         $userEntity = new UserEntity();
         $userEntity->setName($dto->getName());

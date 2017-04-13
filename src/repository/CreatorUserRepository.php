@@ -9,8 +9,8 @@ namespace diaz\david\repository;
 interface CreatorUserRepository
 {
     /**
-     * @param CreatorUserRepositoryDTO $dto
+     * @param UserRepositoryDTO $dto
      * @throws DataNotStorageException
      */
-    public function save(CreatorUserRepositoryDTO $dto);
+    public function save(UserRepositoryDTO $dto);
 }

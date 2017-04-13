@@ -2,10 +2,10 @@
 
 namespace diaz\david\tests\repository;
 
-use diaz\david\repository\CreatorUserRepositoryDTO;
 use diaz\david\repository\DataNotStorageException;
 use diaz\david\repository\DoctrineCreatorUserRepository;
 use diaz\david\repository\UserEntity;
+use diaz\david\repository\UserRepositoryDTO;
 use diaz\david\tests\fake\FakeEntityManager;
 use Doctrine\ORM\Tools\SchemaTool;
 use Doctrine\ORM\Tools\Setup;
@@ -30,7 +30,7 @@ class DoctrineCreatorUserRepositoryTest extends TestCase
     /** @test */
     public function repositoryMustStorageCorrectly()
     {
-        $dto = new CreatorUserRepositoryDTO();
+        $dto = new UserRepositoryDTO();
         $dto->setName('David');
         $dto->setSurname('Díaz');
         $this->_repository->save($dto);
@@ -40,7 +40,7 @@ class DoctrineCreatorUserRepositoryTest extends TestCase
         $expected->setSurname('Díaz');
         $this->assertEquals($expected, $this->_findEntityById(1));
 
-        $dto = new CreatorUserRepositoryDTO();
+        $dto = new UserRepositoryDTO();
         $dto->setName('Pepe');
         $dto->setSurname('Lopez');
         $this->_repository->save($dto);
@@ -66,7 +66,7 @@ class DoctrineCreatorUserRepositoryTest extends TestCase
     public function whenRepositoryCanNotStorageThenThrowDataNotStorageException()
     {
         $this->_entityManager->setThrowException(true);
-        $dto = new CreatorUserRepositoryDTO();
+        $dto = new UserRepositoryDTO();
         $dto->setName('Pepe');
         $dto->setSurname('Lopez');
 
