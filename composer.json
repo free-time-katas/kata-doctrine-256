@@ -13,5 +13,15 @@
       "name": "David Díaz",
       "email": "diazdavid.info@gmail.com"
     }
-  ]
+  ],
+  "autoload": {
+    "psr-4": {
+      "diaz\\david\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "diaz\\david\\tests\\": "tests/"
+    }
+  }
 }
